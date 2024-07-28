@@ -1,0 +1,16 @@
+﻿<!-- Height="160" Width="320">-->
+    <Grid
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:blocknot"
+        mc:Ignorable="d">
+        <TextBox x:Name="NoteName" HorizontalAlignment="Right" Margin="0,45,10,0" TextWrapping="Wrap" Text="Заметка" VerticalAlignment="Top" Width="280" Height="30"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="280" FontSize="14">
+            <Run Language="ru-ru" Text="Введите название для новой заметки:"/>
+        </TextBlock>
+        <Button x:Name="CreateNote_btn" Content="Подтвердить" HorizontalAlignment="Right" Margin="0,80,155,0" VerticalAlignment="Top" Height="30" Width="135"/>
+        <Button x:Name="CancelCreating_btn" Content="Отмена" HorizontalAlignment="Right" Margin="0,80,10,0" VerticalAlignment="Top" Height="30" Width="135"/>
+
+    </Grid>
