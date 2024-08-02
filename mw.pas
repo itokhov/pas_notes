@@ -24,6 +24,14 @@ type
     DropAllNotes_btn := Button(LogicalTreeHelper.FindLogicalNode(rootElement, 'DropAllNotes_btn'));
     SaveNote_btn := Button(LogicalTreeHelper.FindLogicalNode(rootElement, 'SaveNote_btn'));
     OpenNote_btn := Button(LogicalTreeHelper.FindLogicalNode(rootElement, 'OpenNote_btn'));
+    Help_btn := Button(LogicalTreeHelper.FindLogicalNode(rootElement, 'Help_btn'));
+    
+    about_data :string := 'Название программы: Pas Notes'
+                         + char(13) +'Предназначение: простое и удобное ведение заметок'
+                         + char(13) +'Разработчик: Тохов Ислам М'
+                         + char(13) +'Инструметы: Visual Studio, PascalaABC.NET'
+                         + char(13) +'Год разраюотки: 2024'
+                         + char(13) +'Версия: 0.85r';
     
     private procedure InitializeComponent();
     begin
@@ -34,13 +42,14 @@ type
       DropAllNotes_btn.Click += DropAllNotes_btn_Click;
       SaveNote_btn.Click += SaveNote_btn_Click;
       OpenNote_btn.Click += OpenNote_btn_Click;
+      Help_btn.Click += Help_btn_Click;
     end;
     
     public constructor();
     begin
       InitializeComponent();
       self.Content := rootElement;
-      self.Height := 450;
+      self.Height := 480;
       self.Width := 800;
       self.Title := 'Pas Notes';
       NotesList.SelectedIndex := 0;
@@ -188,6 +197,12 @@ type
         sr.Close();
       end;
     end;
+    
+    private procedure Help_btn_Click(sender: object; e: RoutedEventArgs);
+    begin
+      MessageBox.Show(self.about_data, 'Справка', MessageBoxButton.OK);
+    end;
+  
   end;
 
 begin

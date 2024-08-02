@@ -9,17 +9,20 @@
         xmlns:local="clr-namespace:blocknot"
         mc:Ignorable="d">
 
-        <TextBox x:Name="NowNoteContent" Margin="10,10,325,10" AcceptsTab="True" AcceptsReturn="True" BorderThickness="2,2,2,2" ClipToBounds="True" />
+        <TextBox x:Name="NowNoteContent" Margin="10,10,325,10" AcceptsTab="True" AcceptsReturn="True" BorderThickness="2,2,2,2" ClipToBounds="True"/>
 
-        <Grid x:Name="NotesChanger" Margin="480,0,0,0" HorizontalAlignment="Left" Width="300" Height="414" VerticalAlignment="Center">
-            <ListBox x:Name="NotesList" Margin="10,10,10,200"/>
-            <Button x:Name="AddNote_btn"      Content="Добавить"      HorizontalAlignment="Left" Margin="20, 260,0,0" VerticalAlignment="Top" Height="40" Width="125"/>
-            <Button x:Name="DropNote_btn"     Content="Удалить"       HorizontalAlignment="Left" Margin="155,260,0,0" VerticalAlignment="Top" Height="40" Width="125" />
-            <Button x:Name="RenameNote_btn"   Content="Переименовать" HorizontalAlignment="Left" Margin="20,305,0,0"  VerticalAlignment="Top" Height="40" Width="125" />
-            <Button x:Name="DropAllNotes_btn" Content="Удалить все"         HorizontalAlignment="Left" Margin="155,305,0,0" VerticalAlignment="Top" Height="40" Width="125" />
-            <Button x:Name="SaveNote_btn"     Content="Сохранить"     HorizontalAlignment="Left" Margin="20,350,0,0"  VerticalAlignment="Top" Height="40" Width="125" />
-            <Button x:Name="OpenNote_btn"     Content="Открыть"       HorizontalAlignment="Left" Margin="155,350,0,0" VerticalAlignment="Top" Height="40" Width="125"  />
-            <Border BorderBrush="Black" BorderThickness="1" Margin="10,250,10,10"/>
+        <Grid x:Name="NotesChanger" Margin="480,0,0,0" HorizontalAlignment="Left" Width="300" Height="444" VerticalAlignment="Center">
+            <ListBox x:Name="NotesList" Margin="10,10,10,220"/>
+            <Button x:Name="AddNote_btn"      Content="Добавить"      HorizontalAlignment="Left" Margin="20, 240,0,0" VerticalAlignment="Top" Height="40" Width="125"/>
+            <Button x:Name="DropNote_btn"     Content="Удалить"       HorizontalAlignment="Left" Margin="155,240,0,0" VerticalAlignment="Top" Height="40" Width="125" />
+            <Button x:Name="RenameNote_btn"   Content="Переименовать" HorizontalAlignment="Left" Margin="20,285,0,0"  VerticalAlignment="Top" Height="40" Width="125" />
+            <Button x:Name="DropAllNotes_btn" Content="Удалить все"         HorizontalAlignment="Left" Margin="155,285,0,0" VerticalAlignment="Top" Height="40" Width="125" />
+            <Button x:Name="SaveNote_btn"     Content="Сохранить"     HorizontalAlignment="Left" Margin="20,330,0,0"  VerticalAlignment="Top" Height="40" Width="125" />
+            <Button x:Name="OpenNote_btn"     Content="Открыть"       HorizontalAlignment="Left" Margin="155,330,0,0" VerticalAlignment="Top" Height="40" Width="125"  />
+            <Button x:Name="SearchNote_btn"   Content="Поиск"         HorizontalAlignment="Left" Margin="20,375,0,0" VerticalAlignment="Top" Height="40" Width="125" IsEnabled="False" />
+            <Button x:Name="Help_btn"         Content="Справка"       HorizontalAlignment="Left" Margin="155,375,0,0" VerticalAlignment="Top" Height="40" Width="125"/>
+
+            <Border BorderBrush="Black" BorderThickness="1" Margin="10,230,10,15"/>
         </Grid>
         
     </Grid>
